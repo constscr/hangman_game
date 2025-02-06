@@ -1,6 +1,6 @@
 from random import choice
 from enum import Enum
-from typing import List, Set, Optional
+from typing import List, Set
 
 
 class InvalidLetterError(Exception):
@@ -12,6 +12,8 @@ class DuplicateLetterError(Exception):
     pass
 
 class GameStatus(Enum):
+    """The `GameStatus` class allows you to monitor and manage the state of the game."""
+
     in_progress = 1
     won = 2
     lost = 3
